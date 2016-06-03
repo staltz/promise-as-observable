@@ -1,0 +1,23 @@
+{
+  "name": "promise-as-observable",
+  "version": "0.0.0",
+  "description": "A naive implementation of a Promise/A+ using Observables underneath",
+  "main": "lib/index.js",
+  "scripts": {
+    "precompile": "mkdir -p typings && typings install",
+    "compile": "tsc",
+    "pretest": "npm run compile",
+    "test": "mocha --bail"
+  },
+  "author": "Andre Staltz",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.0.0-beta.8"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "promises-aplus-tests": "^2.1.1",
+    "typescript": "1.8.7",
+    "typings": "^1.0.4"
+  }
+}
